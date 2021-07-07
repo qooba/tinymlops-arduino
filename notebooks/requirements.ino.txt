@@ -1,0 +1,6 @@
+Arduino_TensorFlowLite@2.4.0-ALPHA
+Arduino_APDS9960@1.0.3
+Arduino_HTS221@1.0.0
+Arduino_LPS22HB@1.0.1
+Arduino_LSM9DS1@1.1.0
+arduinoFFT@1.5.6

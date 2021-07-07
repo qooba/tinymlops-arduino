@@ -1,0 +1,9 @@
+name: arduino
+
+entry_points:
+  main:
+    command: "python3 ./arduino/train.py"
+  validate:
+    parameters:
+      data_file: path
+    command: "python validate.py {data_file}"
