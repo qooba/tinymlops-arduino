@@ -1,7 +1,5 @@
 #!/bin/bash
 
-RUN_ID=-1
-
 while [[ "$#" -gt 0 ]]; do
     case $1 in
 	-r|--run) RUN_ID="$2"; shift ;;
@@ -13,7 +11,6 @@ while [[ "$#" -gt 0 ]]; do
     esac
     shift
 done
-
 
 Help()
 {
@@ -29,7 +26,7 @@ Help()
    echo
 }
 
-if [[ $HELP -ne 1 && $RUN_ID -ne -1 ]]; then
+if [[ $HELP -ne 1 ]]; then
 
   DEFAULT_ARDUINO_SERIAL="/dev/ttyACM0"
   DEFAULT_ARDUINO_CORE="arduino:mbed_nano"
